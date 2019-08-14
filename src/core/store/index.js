@@ -5,12 +5,12 @@ import createSagaMiddleware from "redux-saga";
 import { searchRequestWatch } from '../../middlewares/searchSagas';
 import { showRequestWatch } from '../../middlewares/showSagas';
 
-export const sagaMiddleware = createSagaMiddleware(); // создаем промежуточный слой
+export const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
   rootReducer,
   compose(
-    applyMiddleware(sagaMiddleware) /*Подключаем промежуточный слой к Store */,
+    applyMiddleware(sagaMiddleware),
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );

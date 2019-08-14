@@ -1,9 +1,7 @@
 import React, { PureComponent } from "react";
-//import Header from "../../containers/Dashboard/components/Header";
 import Search from "../../containers/Search";
 import { withRouter, Redirect, Switch, Route } from "react-router-dom";
 import ShowPage from "../../containers/ShowPage";
-//import styles from "./AppRouter.module.css";
 
 class AppRouter extends PureComponent {
   render() {
